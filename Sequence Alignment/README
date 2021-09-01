@@ -1,0 +1,19 @@
+Files: 
+- seq_align.py
+
+Language: Python 3.xx
+
+Usage:
+python seq_align.py or python3 seq_align.py
+
+
+The program aligns two given sequences based on the gap score and substitution matrix provided. In the case of
+multiple possible alignments, the program uses dfs to find the alingnment with the maximum score. 
+
+- The two sequences are required to be in separate files, and the file names are to be provided when prompted.
+- Enter the the name of the subscore matrix file when prompted.
+- Verify if the substitution file contains a non-comma-delimted PAM-n matrix
+- Enter the gap score along with a "-" when prompted. ex: -5
+
+The program will output the OPT matrix, the score of the optimal alignment, and the optimal alignment itself.
+The program can be terminated with keyboard interrupt. Ctrl+C
